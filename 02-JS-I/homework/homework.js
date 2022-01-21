@@ -43,6 +43,7 @@ function resta(x, y) {
   // Tu código:
   return x-y
 }
+console.log (multiplica(3,4))
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
@@ -71,7 +72,11 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return str1.length === str2.length
+  if (str1.length === str2.length){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 function menosQueNoventa(num) {
@@ -117,7 +122,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num%2===1){
+  if (num%2!==0){
     return true;
   }else{
     return false;
